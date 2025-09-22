@@ -8,14 +8,14 @@
 #-->if we declare an attribute in one class then we can access it anywhere in the prg.
 class Sample:
     def _init_(self):
-        self._name = "Deepthi"
+        self._name = "Appu"
 obj = Sample()
 print(obj._name)
 # PROTECTED--> _name ->we aren't suppose to access variables outside of 
 # the classs, but we can access which aren't recommanded.
 class Parent:
     def _init_(self):
-        self._user="Deepthi"
+        self._user="Appu"
 class Child(Parent):
     def _init_(self):
         super()._init_()
@@ -28,7 +28,7 @@ obj1 = Child()
 # whenever if we do inheritence then protected variables are allowed to use in both child and parent.
 class Parent:
     def _init_(self):
-        self.__user = "Deepthi"  # private variable
+        self.__user = "Appu"  # private variable
 class Child(Parent):
     def _init_(self):
         super()._init_()
@@ -40,7 +40,7 @@ obj1 = Child()
 #getter
 class Sample:
     def _init_(self):
-        self.__name="Deepthi"
+        self.__name="Appu"
     def getDetails(self):
         return self.__name
 obj=Sample()
@@ -49,11 +49,11 @@ print(obj.getDetails())
 #setter
 class Demo:
     def _init_(self):
-        self._name = "Deepthi"  # Correct use of self
+        self._name = "Appu"  # Correct use of self
 
 obj = Demo()
 print(obj._dict)           # Corrected __dict_
-obj._name = "Deepthi"         # Optional (already set in constructor)
+obj._name = "Appu"         # Optional (already set in constructor)
 print(obj._dict_)
 
 
@@ -115,4 +115,4 @@ class Employee:
         print("Employee Name:", self.__name)
         print("Current Salary: ₹", self.__salary)
 
-encap method over ridi
+encap method over riding
